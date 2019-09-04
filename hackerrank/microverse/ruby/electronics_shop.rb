@@ -19,19 +19,19 @@ def getMoneySpent(keyboards, drives, b)
     #
     # Write your code here.
     #
-    keyboards.sort.reverse
-    drives.sort
-    res = -1
-    for k in keyboards
-      for d in drives
-        if k+d > b
-             break
-        elsif k+d > res
-             res = k+d
+    l = []
+    for x in keyboards
+        for y in drives
+            if x+y <= b
+                l.push(x+y)
+            end
         end
-      end
     end
-    return res
+    if l.max
+        return l.max
+    else
+        return -1
+    end
 end
 
 
