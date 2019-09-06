@@ -1,5 +1,7 @@
 =begin
 
+Lisa's Workbook
+
 Lisa just got a new math workbook. A workbook contains exercise problems,
 grouped into chapters. Lisa believes a problem to be special if its index
 (within a chapter) is the same as the page number where it's located.
